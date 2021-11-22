@@ -1,0 +1,225 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-11-22T05:58:09.928Z",
+        "before": [
+          {
+            "result": {
+              "duration": 904849832,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Baseclass.Setup()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Verify Login Functionality with correct username and password",
+        "description": "",
+        "id": "login-feature-scenarios;verify-login-functionality-with-correct-username-and-password;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 69911911,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Baseclass.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"link text\",\"selector\":\"Log in\"}\n  (Session info: chrome\u003d83.0.4103.97)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027ip-172-31-30-62\u0027, ip: \u0027172.31.30.62\u0027, os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00274.4.0-1113-aws\u0027, java.version: \u00271.8.0_265\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /tmp/.com.google.Chrome.VD7Pjd}, goog:chromeOptions: {debuggerAddress: localhost:42241}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 84d73e038954f6fda50550e48bc8aa27\n*** Element info: {Using\u003dlink text, value\u003dLog in}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)\n\tat org.openqa.selenium.By$ByLinkText.findElement(By.java:220)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat stepdefs.LoginStepDefs.user_has_laumched_the_swag_labs_application(LoginStepDefs.java:28)\n\tat ✽.User has laumched the Swag Labs Application(file:src/test/java/features/Login.feature:5)\n",
+              "duration": 4334641880,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "User has laumched the Swag Labs Application",
+            "match": {
+              "location": "LoginStepDefs.user_has_laumched_the_swag_labs_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 239508,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "User enters username \"standard_user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 22
+                }
+              ],
+              "location": "LoginStepDefs.user_enters_username_something(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 182723,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "User enters password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "secret_sauce",
+                  "offset": 22
+                }
+              ],
+              "location": "LoginStepDefs.user_enters_password_something(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 163818,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User clicks on Login Button",
+            "match": {
+              "location": "LoginStepDefs.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 169861,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User Should be landed on the Products Page",
+            "match": {
+              "location": "LoginStepDefs.user_should_be_landed_on_the_products_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginFeature"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-22T05:58:15.307Z",
+        "before": [
+          {
+            "result": {
+              "duration": 666799795,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Baseclass.Setup()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Negetive Login Feature",
+        "description": "",
+        "id": "login-feature-scenarios;negetive-login-feature;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 65959705,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Baseclass.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "User Opened Swag Lab Application",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 17,
+            "name": "User Enters username \"standard_user\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 18,
+            "name": "User Enter Password \"Test1234\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 19,
+            "name": "Clicks on Login Button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 274878,
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "User Should Get \"Epic sadface: Username and password do not match any user in this service\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Epic sadface: Username and password do not match any user in this service",
+                  "offset": 17
+                }
+              ],
+              "location": "LoginStepDefs.user_should_get_something(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginFeature"
+          }
+        ]
+      }
+    ],
+    "name": "Login Feature Scenarios",
+    "description": "",
+    "id": "login-feature-scenarios",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Login.feature",
+    "tags": [
+      {
+        "name": "@LoginFeature",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
